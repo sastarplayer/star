@@ -3,10 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>SP || Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
         <!-- google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <!-- fontawesome -->
@@ -35,8 +38,11 @@
             <div class = "navigation-container">
                 <div class = "top-head">
                     <div class = "web-name">
+                        <img src="/sp/images/logo.jpg" alt="">                                    
+                    </div>
+
+                    <div>
                         <h1>STAR PLAYER</h1><br>
-                  
                     </div>
 
                     <div class = "ham-btn">
@@ -57,12 +63,12 @@
                 <div class = "nav-bar" id = "nav-bar">
                     <nav>
                         <ul>
-                            <li><a class="active" href="/sp/home.html">Home</a></li>
-                            <li><a href="/sp/news.html">Soccer News</a></li>
+                            <li><a class="active" href="/sphome.html">Home</a></li>
+                            <li><a href="/spnews.html">Soccer News</a></li>
                            <!-- <li><a href="/sp/sp_videos.html">SP-Videos</a></li>
                             <li><a href="/sp/sport_chat.html">Sport Chat</a></li> -->
-                            <li><a href="/sp/development.html">Development</a></li>
-                            <li><a href="/sp/our_team.html">Our Team</a></li>
+                            <li><a href="/spdevelopment.html">Development</a></li>
+                            <li><a href="/spour_team.html">Our Team</a></li>
                           </ul>
                     </nav>
                 </div>
@@ -86,177 +92,146 @@
                 </div>
             </div>
         </header>
-
-        <section class = "banner">
-            <div class = "banner-main-content">
-                <h2>SPORT PLATFORM</h2>
-                <img src="/sp/images/logo.jpg" width="100%" height="350px" alt="">
-
-                 <h3>Read Our Services</h3>
-                <div class = "current-news-head">
-                    <h3>1. We Offer Soccer News</h3>
-
-                  <!--  <h3>2. We Offer Live Soccer Videos</h3>
-
-                    <h3>3. We Offer Sport Chat Zone</h3> -->
-
-                    <h3>4. We Support Soccer Youth Development</h3>
-                </div>
-            </div>
-
-            <div class = "banner-sub-content">
-                <div class = "hot-topic">
-                    <img src = "/sp/images/Chelsea.jpg" alt = "">
-
-                    <div class = "hot-topic-content">
-                        <h2>Chelsea has won their 2nd UEFA Champions League.</h2>
-
-                        <h3>New Topic 1</h3>
-                        <p>Pep Guardiola has Puff his cheeks after losing the UEFA Champions League Final 1-0 to Chelsea
-                            in the Do Dragao Stadium. </p>
-                        <a href = "/sp/news/EPL-Champions.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class = "hot-topic">
-                    <img src = "/sp/images/alhypitso.jpg"" alt = "">
-
-                    <div class = "hot-topic-content">
-                        <h2>Sundowns fans called Pitso Mosimane by names.</h2>
-
-                        <h3>New Topic 2</h3>
-                        <p>Sundowns have (1-1) lock horns with Al Ahly in the Caf Champions League match that partook at the 
-                            Lucas Moripe Stadium</p>
-                        <a href = "/sp/news/sundowns-fans.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class = "hot-topic">
-                    <img src = "/sp/images/pitso.jpg" alt = "">
-
-                    <div class = "hot-topic-content">
-                        <h2>Pitso said he's not here for fancy football.</h2>
-
-                        <h3>New Topic 1</h3>
-                        <p>Pitso Mosimane said he had a big responsibility of taking Aly Ahly into the semi-finals of Caf
-                            Champions League.</p>
-                        <a href = "/sp//news/pitso-mosimane.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class = "hot-topic">
-                    <img src = "/sp/images/helman.jpg" alt = "">
-
-                    <div class = "hot-topic-content">
-                        <h2>Helman Mkhalele: announced as the new assistant coach of Bafana Bafana.</h2>
-
-                        <h3>New Topic 4</h3>
-                        <p>Helman Mkhalele has been appointed as the new assistant coach of Bafana Bafana.</p>
-                        <a href = "/sp/news/mkhalele.html">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>
-              <a href = "/sp/news.html" class="btn post-btn">Click To Read All News &nbsp; <i class="fas fa-arrow-right"></i></a>
-          </h2>
-          </div> 
-        </section>
-        
-        <hr>
+        <div class="breaking-news-section">
+            <span id="btext">Breaking News</span>
+            <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="/sp/news/mancity.html" class="breaking-news">
+                    <p class="bntime">May 14, 12:00 PM</p>
+                    It Official: Man City crowned as the EPL champions.</a>
+                <a href="/sp/news/caf-fixture.html" class="breaking-news"><p class="bntime">April 30, 18:00 PM</p>CAF Quater-Finals Fixture Announced.</a>
+                <a href="/sp/news/mancity.html" class="breaking-news"><p class="bntime">May 01, 19:20 PM</p>Manchester City currently need 2-points to win the league.</a>
+            </marquee>
+        </div> 
 
         <main>
-            <section class = "main-container-left">
-                <h2>SA STARPLAYER DEVELOPMENT</h2>
-                <div class = "container-top-left">
-                    <article>
-                        <img src = "/sp/images/development.png">
+			<article id="popular-news">
+				<div id="featured">
+					<h2>FEATURED</h2>
+					<section class="popular-news-carousel">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+                                <h3>Chelsea has won their 2nd UEFA Champions League.</h3>
+                                <a href="/sp/news/EPL-Champions.html"><img class="d-block w-100" src="/sp/images/Chelsea.jpg" alt="First slide"></a>
+								<div class="carousel-caption d-none d-md-block">
+									
+									<strong>Pep Guardiola has Puff his cheeks after losing the UEFA Champions League Final 1-0 to Chelsea
+                                        in the Do Dragao Stadium.</strong><p></p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+                                <h3>Sundowns fans called Pitso Mosimane by names.</h3>
+                                <a href="/sp/news/sundowns-fans.html"> <img class="d-block w-100" src="/sp/images/alhypitso.jpg" alt="Second slide"></a>
+                              
+								<div class="carousel-caption d-none d-md-block">
+									
+									<strong>Sundowns have (1-1) lock horns with Al Ahly in the Caf Champions League match that partook at the 
+                                        Lucas Moripe Stadium</strong><p>1</p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+                                <h3>Helman Mkhalele: announced as the new assistant coach of Bafana Bafana.</h3>
+                                <a href="/sp/news/mkhalele.html"><img class="d-block w-100" src="/sp/images/helman.jpg" alt="Third slide"></a>
+								<div class="carousel-caption d-none d-md-block">
+									
+									<strong>Helman Mkhalele has been appointed as the new assistant coach of Bafana Bafana.</strong><p></p>
+								 </div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</section>
+					
+				</div>
+				<div id="latest">
+					<h2>LATEST</h2>
+					<section class="news">
+						<div class="news-container">
+							<a href="/sp/news/EPL-Champions.html"></a> <img src="/sp/images/Chelsea.jpg">
+							<p class="carousel-text">Chelsea has won their 2nd UEFA Champions League.</p>				
+						</div>						
+					</section>
+                    
+                    <br>
 
-                        <div>
-                            <h3>SA STAR PLAYER company understands that "THE FUTURE BULL IS AMONGST THE CALVES"</h3>
+					<section class="news">
+						<div class="news-container">
+							<a href="/sp/news/sundowns-fans.html"><img src="/sp/images/pitso.jpg"></a>
+							<p class="carousel-text">Downs supporters called Mosimane by names.</p>				
+						</div>						
+					</section>
+				</div>
+				<div id="our-picks">
+					<h2>OUR PICKS</h2>
+					<section class="news">
+						<div class="news-container">
+							<a href="/sp/news/pitso-mosimane.html"><img src="/sp/images/alhypitso.jpg"></a>
+							<p class="carousel-text">Pitso said he's not here for fancy football. </p>				
+						</div>						
+					</section>
 
-                            <p>We allow young players to write to us all soccer-related problems they face in their communities.</p>
+                       <br>
 
-                            <a href = "/sp/development.html">Read More <span>>></span></a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class = "container-bottom-left">
-                    <article>
-                        <img src = "/sp/images/infrastructure1.jpg">
-                        <div>
-                            <h3>Infrastructure Related Problems</h3>
-                            <p>SA STAR PLAYER WILL ALSO FOCUS ON POOR SERVICE DELIVERY THAT EFFECTS SOCCER MOSTLY IN DISADVANTAGE COMMUNITIES.</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <img src = "/sp/images/training.jpg">
-                        <div>
-                            <h3>Soccer Training Related Problems</h3>
-                            <p>STARPLAYER PROVIDES COMMUNICATION BETWEEN YOUNG STARS AND SOCCER EXPERTS IN SOUTH AFRICA.</p>
-
-                            
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class = "main-container-right">
-                <h2>Other STARPLAYER News</h2>
-                
-                <article>
-                    <h4>ONE</h4>
-                    <div>
-                        <h2>Manqoba Mnqithi said, "We need to remind people who we are."</h2>
-
-                        <p>Sundowns have once more defeated Orlando Pirates 3-0 in a DSTV Premiership match, that  showcase, at the Orlando Stadium.</p>
-
-                      
-                    </div>
-                    <img src = "/sp/images/Manqoba.jpg">
-                </article>
-
-                <article>
-                    <h4> TWO </h4>
-                    <div>
-                        <h2>Caf Quarter-Finals fixtures Announced </h2>
-
-                      <p>The announcement was made at the Egypt CAF Headquarters. All teams that finished top in their  group will play against teams that finish second in their group</p>
-
-                        <a href = "/sp/news/caf-fixture.html">Read More <span>>></span></a>
-                    </div>
-                    <img src = "/sp/images/caf.jpg">
-                </article>
-
-
-                <article>
-                    <h4> THREE </h4>
-                    <div>
-                        <h2>Manchester City currently need 2-points to win the league.</h2>
-
-                        <p>Manchester City has extended their unbeaten run of 19 wins away from home. The track record  amplified when they beat Crystal Palace 2-0 at the Selhurst Stadium.</p>
-
-                        <a href = "/sp/news/mancity.html">Read More <span>>></span></a>
-                    </div>
-                    <img src = "/sp/images/man-city.jpg">
-                </article>
+					<section class="news">
+						<div class="news-container">
+							<a href="/sp/news/mkhalele.html"><img src="/sp/images/helman.jpg"></a>
+							<p class="carousel-text">Helman Mkhalele: announced as the new assistant coach of Bafana Bafana.</p>				
+						</div>						
+					</section>
+				</div>
+			</article>
+			<section class="more-news">
+				<div class="news-section">
+					<article class="world">
+						<h2>STARPLAYER DEVELOPMENT (INFRASTRUCTURE)</h2>
+						<img src="/sp/images/infrastructure1.jpg">
+						<h3>SA STAR PLAYER company understands that "THE FUTURE BULL IS AMONGST THE CALVES"</h3>
+						<p>We allow young players to write to us all soccer-related problems they face in their communities.</p>
+					</article>
+					<article class="sport">
+						<h2>STARPLAYER DEVELOPMENT (PHYLOSOPHY)</h2>
+						<img src="/sp/images/training.jpg">
+						<h3>Soccer Training Related Problems</h3>
+						<p>Starplayer Provides Communication Between Young Stars And Soccer Experts In South Africa.</p>
+					</article>
+				</div>
+				
+				<aside>
+					<h4>RECENT</h4>
+					<div class="recent-news">
+						<a href="/sp/news/caf-fixture.html"><img src="/sp/images/Manqoba.jpg"></a>
+						<p>Manqoba Mnqithi said, "We need to remind people who we are."</p>
+					</div>
+					<div class="recent-news">
+						<a href="/sp/news/caf-fixture.html"><img src="/sp/images/caf-icon.jpg"></a>
+						<p>Caf Quarter-Finals fixtures Announced</p>
+					</div>
+					<div class="recent-news">
+						<a href="/sp/news/mancity.html"><img src="/sp/images/man-city.jpg"></a>
+						<p>Manchester City currently need 2-points to win the league.</p>
+					</div>
+					<div class="recent-news">
+						<a href="/sp/news/amazulu.html"><img src="/sp/images/amazulu.jpg"></a>
+						<p>AmaZulu has sparked the title race.</p>
+					</div>
+			
+				</aside>
+			</section>
+		</main>
 
 
-                <article>
-                    <h4>FOUR</h4>
-                    <div>
-                        <h2>AmaZulu has sparked the title race.</h2>
-
-                        <p>The nipped 3 points have shifted AmaZulu to be one point behind Mamelodi Sundowns, who still have their two games in hand. The aMasandawana has locked horns with Golden Arrows after playing a goalless draw that displayed at the Loftus Stadium.</p>
-
-                        <a href = "/sp/news/amazulu.html">Read More <span>>></span></a>
-                    </div>
-                    <img src = "/sp/images/amazulu.jpg">
-                </article>
-            </section>
-        </main>
 
 
     <!-- --------------------------- Footer ---------------------------------------- -->
@@ -301,6 +276,11 @@
             <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
 
